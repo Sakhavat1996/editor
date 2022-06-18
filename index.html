@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insider Test Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="editor-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 mb-3 mt-3 d-flex justify-content-end">
+                    <select class="form-select mr-1" id="select" aria-label="Default select example">
+                        <option selected disabled>History</option>
+
+                    </select>
+                    <button type="button" data-toggle="modal" data-target="#exampleModal"
+                        class="btn btn-primary ml-4">Save</button>
+                </div>
+                <div class="col-md-12">
+                    <iframe id="code"></iframe>
+                </div>
+            </div>
+            <div class="col-md-12 mb-3 d-flex justify-content-end">
+                <div class="row">
+                    <div class="coding-section-controllers">
+                        <button type="button" id="minimize" class="btn btn-secondary">Minimize</button>
+                        <button type="button" id="run-code" class="btn btn-success">Run</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coding-section w-100" id="coding-section">
+                <div class="textareas w-100">
+                    <div class="code-column">
+                        <div class="form-group">
+                            <textarea id="html" class="form-control code-box" placeholder="HTML"></textarea>
+                        </div>
+                    </div>
+                    <div class="code-column">
+                        <div class="form-group">
+                            <textarea id="css" class="form-control code-box" placeholder=" CSS"></textarea>
+                        </div>
+                    </div>
+                    <div class=" code-column">
+                        <div class="form-group">
+                            <textarea id="js" class="form-control code-box" placeholder="JavaScript"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Save your code</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Title</label>
+                            <input type="text" class="form-control" id="code-title">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="save" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js">
+    </script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>

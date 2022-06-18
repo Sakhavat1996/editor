@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style-type: none;
+  border: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  display: inline-block;
+}
+
+select {
+  border: 2px solid gray;
+  padding: 0 5px;
+}
+
+#code {
+  width: 100%;
+  min-height: 300px;
+  margin: 24px 0;
+  border: 1px solid #ced4da;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#code.wide {
+  min-height: 550px;
+}
+
+.coding-section {
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  height: 320px;
+}
+
+.coding-section.hide {
+  height: 0;
+}
+
+.coding-section .textareas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.coding-section .textareas .code-column {
+  width: 33%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.coding-section .textareas .code-column textarea {
+  border: 2px solid #3333;
+}
+
+.coding-section .textareas .code-column textarea.code-box {
+  min-height: 300px;
+}
+
+.coding-section .textareas .code-column.expand {
+  width: 75%;
+}
+/*# sourceMappingURL=style.css.map */

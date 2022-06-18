@@ -1,0 +1,56 @@
+$text  : #ced4da
+$black : #3333
+$gray : gray
+
+* 
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	text-decoration: none
+	outline: none
+	list-style-type: none
+	border: 0
+
+
+html,body 
+	width: 100%
+	height: 100%
+
+a 
+	display: inline-block
+
+select
+  border: 2px solid $gray
+  padding: 0 5px
+
+#code
+  width: 100%
+  min-height: 300px
+  margin: 24px 0
+  border: 1px solid $text
+  transition: all 0.4s ease-in-out
+  &.wide
+    min-height: 550px
+
+.coding-section
+  overflow: hidden
+  transition: all 0.4s ease-in-out
+  height: 320px
+
+  &.hide 
+    height: 0
+
+  .textareas
+    display: flex
+    grid-gap: 5px
+    justify-content: space-between
+
+    .code-column
+      width: 33%
+      transition: width .3s
+      textarea
+        border: 2px solid $black
+        &.code-box
+          min-height: 300px
+      &.expand
+        width: 75%
